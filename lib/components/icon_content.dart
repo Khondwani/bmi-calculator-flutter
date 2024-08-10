@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import '../constants.dart';
 
 class IconContent extends StatelessWidget {
-  const IconContent({this.label, this.iconImage});
+  const IconContent({required this.label, required this.iconImage});
   final String label;
   final IconData iconImage;
 

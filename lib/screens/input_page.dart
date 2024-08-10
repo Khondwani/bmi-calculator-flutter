@@ -19,7 +19,7 @@ class InputPage extends StatefulWidget {
 }
 
 class _InputPageState extends State<InputPage> {
-  Gender selectedGender;
+  Gender selectedGender = Gender.male;
   int height = 180;
   int weight = 55;
   int age = 19;
@@ -241,9 +241,9 @@ class _InputPageState extends State<InputPage> {
 }
 
 class RoundIconButton extends StatelessWidget {
-  RoundIconButton({@required this.icon, @required this.onPressed});
+  RoundIconButton({required this.icon, required this.onPressed});
   final IconData icon;
-  final Function onPressed;
+  final VoidCallback onPressed;
   @override
   Widget build(BuildContext context) {
     return RawMaterialButton(

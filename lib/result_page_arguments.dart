@@ -3,5 +3,5 @@ class ResultPageArguments {
   final String resultText;
   final String interpretation;
 
-  ResultPageArguments({this.bmiResults, this.resultText, this.interpretation});
+  ResultPageArguments({required this.bmiResults, required this.resultText, required this.interpretation});
 }
